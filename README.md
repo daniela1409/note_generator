@@ -8,14 +8,14 @@
   
   En el siguiente comando, donde está "numero_de_ip_servidor_bd" se deja como localhost o se pone la dirección IP del servidor de base de datos:
       spring.datasource.url=jdbc:mysql://numero_de_ip_servidor_bd/db_note_generation?serverTimezone=America/Bogota&useSSL=false
-4. Correr el proyecto de Springboot
-5. Correr los comandos:
+5. Correr el proyecto de Springboot
+6. Correr los comandos:
   USE db_note_generation;
   INSERT INTO lab_cases (name, create_at) VALUES('lab cas 1', NOW());
   INSERT INTO lab_cases (name, create_at) VALUES('lab cas 2', NOW());
   INSERT INTO lab_cases (name, create_at) VALUES('lab cas 3', NOW());
   INSERT INTO lab_cases (name, create_at) VALUES('lab cas 4', NOW());
- 6. Ya la api del generador de notas debería estar corriendo
+ 7. Ya la api del generador de notas debería estar corriendo
  
  
  Para las consultas desde Postman al backend, se usa lo siguiente:
