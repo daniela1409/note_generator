@@ -2,6 +2,12 @@
 2. Abrir el proyecto en el IDE de preferencia. Normalmente los IDES para proyectos Spring Boot son Netbeans, Eclipse y Spring Boot tools
 3. Crear base de datos llamada "db_note_generation":
   CREATE database db_note_generation;
+4. En el archivo aplication.properties se debe configurar los siguientes campos:
+  spring.datasource.username=usuario de la conexión
+  spring.datasource.password=contraseña de la conexion
+  
+  En el siguiente comando, donde está "numero_de_ip_servidor_bd" se deja como localhost o se pone la dirección IP del servidor de base de datos:
+      spring.datasource.url=jdbc:mysql://numero_de_ip_servidor_bd/db_note_generation?serverTimezone=America/Bogota&useSSL=false
 4. Correr el proyecto de Springboot
 5. Correr los comandos:
   USE db_note_generation;
